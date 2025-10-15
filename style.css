@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-image: url(images/main3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #FAFAFA;
+    color: #0A0A0A;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: #0A0A0A;
+    text-transform: uppercase;
+}
+
+li>a:hover {
+    color: rgb(10, 164, 225);
+}
+
+.parent {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.parent:hover .dropdown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(228, 228, 227, 0.937);
+    padding: 10px 5px;
+    box-shadow: 5px 5px 10px rgb(29, 26, 26);
+    top: 30px;
+}
+
+
+.dropdown>div>a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dropdown>div>a:hover {
+    color: rgba(11, 108, 244, 0.922);
+}
+h2{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    border: 3px solid rgb(133, 180, 142);
+    color: white;
+}
+.center{
+    position: absolute;
+    top: 30%;
+    width: 80%;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
